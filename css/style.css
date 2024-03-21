@@ -494,7 +494,7 @@ img {
         position: relative;
         margin: auto;
         border-radius: 50px;
-        height: 100vh;
+        height: calc(100vh - 80px);
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -549,6 +549,7 @@ img {
         justify-content: space-around;
         color: var(--color-hover);
         font-size: 2vw;
+        border: none;
     }
     .down > div button {
         padding: 5px 15px;
@@ -556,5 +557,8 @@ img {
         color: var(--color-secundario);
         background-color: var(--color-hover);
         border: none;
+    }
+    .top_cart a {
+        color: var(--color-secundario);
     }
 }
