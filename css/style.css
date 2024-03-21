@@ -11,7 +11,7 @@ body {
     height: max-content;
     background: var(--color-principal);
 }
-li, a {
+.nav__menu li, .nav__menu a {
     list-style: none;
     text-decoration: none;
     color: var(--color-hover);
@@ -71,4 +71,111 @@ img {
     display: block;
     color: var(--color-secundario);
     font-size: 3.5vh;
+}
+
+/*Main section*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 3vh;
+    width: 100%;
+    height: max-content;
+    align-items: center;
+    gap: 10vh;
+}
+.main > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-cards);
+    padding: 1.5vh;
+    padding-top: 85px;
+}
+.top {
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(4, 90px);
+    grid-template-areas: 
+    "izq1 der"
+    "izq2 der"
+    "izq3 der"
+    "izq4 der";
+    grid-gap: 15px;
+}
+.top__izq {
+    width: 100%;
+    height: 100%;
+}
+.top__izq:first-child {
+    grid-area: izq1;
+    align-content: space-between;
+}
+.top__izq:nth-child(2) {
+    grid-area: izq2;
+}
+.top__izq:nth-child(3) {
+    grid-area: izq3;
+}
+.top__izq:last-child {
+    grid-area: izq4;
+}
+.top__der {
+    grid-area: der;
+    width: 100%;
+    height: 100%;
+}
+.bottom {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 90%;
+    align-self: flex-start;
+    justify-content: space-evenly;
+}
+.bottom h1 {
+    color: var(--color-hover);
+    text-transform: capitalize;
+    font-size: 3.1vh;
+}
+.stars {
+    color: var(--color-darkcards);
+    font-size: 4vh;
+}
+.bottom p {
+    font-size: 1.3vh;
+    color: var(--color-secundario);
+}
+.main__footer {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    gap: 2vh;
+}
+.price {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    width: 15vh;
+}
+.price h1 {
+    font-size: 2.5vh;
+}
+.price button,
+.price button a {
+    background: var(--color-hover);
+    border: none;
+    font-size: 2vh;
+    color: var(--color-secundario);
+    font-weight: 400;
+    padding: 1vh 0;
+}
+.main__footer small {
+    color: var(--color-hover);
+    font-weight: 600;
+    font-size: 1.5vh;
 }
