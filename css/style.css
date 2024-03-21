@@ -186,6 +186,84 @@ img {
 }
 
 
+
+
+#cardInf {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    flex-direction: column;
+    margin: auto;
+    display: flex;
+    border-radius: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-darkcards);
+    padding: 4vh;
+    padding-top: 1vh;
+}
+.trash {
+    font-size: 3vh;
+    background: none;
+    border: none;
+    align-self: flex-end;
+    color: var(--color-hover);
+}
+.img {
+    width: 70%;
+    height: 50%;
+}
+.img img {
+    border-radius: 55px;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.txt {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.txt h1 {
+    color: var(--color-hover);
+    text-transform: capitalize;
+    font-size: 2vh;
+}
+.starsCard {
+    color: var(--color-hover);
+    font-size: 2vh;
+}
+.txt > p {
+    font-size: 1.5vh;
+    width: 80%;
+    color: var(--color-secundario);
+}
+.priceCard {
+    display: flex;
+    font-size: 1vh;
+    gap: 2vh;
+}
+.priceCard small {
+    border: none;
+    display: flex;
+    align-items: flex-end;
+    color: var(--color-hover);
+    font-weight: 600;
+    font-size: 1vh;
+}
+.cantidad {
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+}
+.cantidad > input {
+    padding: .5vh;
+}
+.cantidad > button {
+    padding: .5vh 3vh;
+    color: var(--color-hover);
+    font-size: 1.5vh;
+}
+
 /*Desktop*/
 
 @media (width > 1024px), ( 280px <= height < 1000px) and (width >= 600px) {
@@ -265,7 +343,7 @@ img {
     }
     #cardInf {
         width: 50vw;
-        height: 100vh;
+        height: calc(100vh - 80px);
         position: relative;
         flex-direction: column;
         margin: auto;
