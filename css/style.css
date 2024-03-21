@@ -264,6 +264,78 @@ img {
     font-size: 1.5vh;
 }
 
+
+.main_cart {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: var(--color-cards);
+}
+.top_cart {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--color-secundario);
+    font-size: 3vh;
+}
+.middle {
+    height: 70%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 10px;
+}
+.middle > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    text-align: center;
+    border: 3px solid var(--color-hover);
+}
+.cardMid img {
+    width: 100px;
+    height: 100px;
+}
+.number {
+    font-size: 1vh;
+    color: var(--color-secundario);
+}
+.number p {
+    border: 2px solid var(--color-hover);
+}
+.cardMid > p,
+.cardMid > sub {
+    font-size: 1.2vh;
+    color: var(--color-secundario);
+}
+.cardMid > i {
+    color: var(--color-hover);
+}
+.down {
+    display: flex;
+    justify-content: space-around;
+    color: var(--color-hover);
+    font-size: 2vh;
+    border: 2px solid var(--color-hover);
+}
+.down > div button {
+    padding: 5px 15px;
+    width: 100px;
+    color: var(--color-secundario);
+    background-color: var(--color-hover);
+    border: none;
+}
+.body_cart {
+    overflow-x: hidden;
+}
+.header_cart {
+}
 /*Desktop*/
 
 @media (width > 1024px), ( 280px <= height < 1000px) and (width >= 600px) {
