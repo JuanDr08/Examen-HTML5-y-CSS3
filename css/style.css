@@ -336,6 +336,9 @@ img {
 }
 .header_cart {
 }
+.trash a {
+    color: var(--color-secundario);
+}
 /*Desktop*/
 
 @media (width > 1024px), ( 280px <= height < 1000px) and (width >= 600px) {
